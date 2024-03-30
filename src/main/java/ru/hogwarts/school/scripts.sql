@@ -1,5 +1,5 @@
 SELECT * FROM student
-WHERE age BETWEEN 25 AND 30;
+WHERE age BETWEEN 10 AND 20;
 
 SELECT name
 FROM student;
