@@ -9,6 +9,7 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
 import ru.hogwarts.school.model.Student;
+import ru.hogwarts.school.repository.AvatarRepository;
 import ru.hogwarts.school.repository.StudentRepository;
 
 import java.util.ArrayList;
@@ -22,6 +23,8 @@ import static org.mockito.Mockito.when;
 class StudentServiceTest {
     @Mock
     StudentRepository repository;
+    @Mock
+    AvatarRepository avatarRepository;
     @InjectMocks
     StudentService service;
     Student student = new Student(1L, "Harry", 11);
